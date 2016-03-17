@@ -1,6 +1,7 @@
 # Team Scripting
 
 ### Task 1
+* **建议使用4空格为缩进值**
 * 注意文件夹结构, 文件夹命名用小写
 * 任务相关的文件命名可用"Task_1_1.html", "Task_1_2.css"
 * clone到本地之后, 创建branch, 在根目录Scripting Team下新建文件夹写任务. 如"Task_1_S1ngS1ng". 写好之后发PR即可
