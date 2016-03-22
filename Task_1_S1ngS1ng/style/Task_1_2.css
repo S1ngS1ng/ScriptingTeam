@@ -1,0 +1,96 @@
+/*Body Background*/
+
+/*All header*/
+header {
+    background: #1c1c1c;
+    min-height: 50px;
+    /*Center header in the middle!*/
+    margin: 0 auto;
+}
+
+header > .icon {
+    margin: 5px 4% 5px;
+    max-height: 40px;
+    float: left;
+}
+
+header > nav {
+    float: right;
+    max-height: 40px;
+    max-width: 30%;
+    margin: 10px 30px;
+}
+
+nav >li {
+    list-style: disc;
+    display: inline;
+    margin: auto 2%;
+}
+
+header > nav > li > a {
+    font-size: large;
+    color: white;
+    margin-right: 1em;
+}
+
+div.container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    border: solid;
+    border-color: darkgray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.container > ul > li {
+    list-style: none;
+}
+
+.author, .time {
+    color: grey;
+}
+
+p {
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+h3 {
+    color: #6c6c6c;
+}
+
+figure {
+    border: solid #9a9a9e;
+    width: 150px;
+    height: 160px;
+}
+
+figure > p {
+    padding: auto;
+    margin: 15px auto;
+}
+
+figure > img {
+    display: block;
+    margin: auto;
+}
+
+
+tr.tableHeader {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+tr.tableBottom {
+    background-color: grey;
+}
+
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+}
