@@ -9,10 +9,10 @@
 <header>
     <img class="icon" src="../image/loveJS.png" alt="loveJS.png" />
     <nav>
-        <li><a href="#">导航链接一</a></li>
-        <li><a href="#">导航链接二</a></li>
-        <li><a href="#">导航链接三</a></li>
-        <li><a href="#">导航链接四</a></li>
+        <li><a href="javascript:void(0);">导航链接一</a></li>
+        <li><a href="javascript:void(0);">导航链接二</a></li>
+        <li><a href="javascript:void(0);">导航链接三</a></li>
+        <li><a href="javascript:void(0);">导航链接四</a></li>
     </nav>
 </header>
 
@@ -96,7 +96,7 @@
         <li>排名2</li>
         <li>排名3</li>
     </ol>
-    <p>下面是一个表格</p>
+    <p class="exception">下面是一个表格</p>
     <table>
         <thead>
         <tr class="tableHeader">
@@ -136,38 +136,55 @@
 
 <div class="container">
     <h2>这里以后是一个侧栏, 这是侧栏的标题</h2>
-    <form action="#">
-        <label for="email">请输入邮箱地址: </label>
-        <input type="text" id="email" placeholder="这是一个文本输入框"/> <br>
-        <p>邮箱地址请按要求格式输入</p>
+    <form onsubmit="return false">
+        <div>
+            <label class="alignment" for="email">请输入邮箱地址</label>
+            <input type="text" id="email" placeholder="这是一个文本输入框"/> <br>
+            <span class="info">邮箱地址请按要求格式输入</span>
+        </div>
 
-        <label for="password">请输入密码: </label>
-        <input type="text" id="password" placeholder="这是一个文本输入框"/>
-        <label for="password_conf">请重复输入密码: </label>
-        <input type="text" id="password_conf" placeholder="这是一个文本输入框"/> <br>
-        <p>密码请为6-16位英文数字</p>
+        <div>
+            <label class="alignment" for="password">请输入密码</label>
+            <input type="text" id="password" placeholder="这是一个文本输入框"/> <br>
+            <label class="alignment" for="password_conf">请重复输入密码</label>
+            <input type="text" id="password_conf" placeholder="这是一个文本输入框"/> <br>
+            <span class="info">密码请为6-16位英文数字</span>
+        </div>
 
-        <label>性别</label>
-        <label> <input type="radio" name="gender" value="male"> 男 </label>
-        <label> <input type="radio" name="gender" value="female"> 女 </label>
+        <div>
+            <label class="alignment">性别</label>
+            <label> <input type="radio" name="gender" value="male"> 男 </label>
+            <label> <input type="radio" name="gender" value="female"> 女 </label>
+        </div>
 
+        <div>
+            <label class="alignment">城市</label>
+            <label for="city">
+                <select name="city" id="city">
+                    <option value="beijing">北京</option>
+                    <option value="shanghai">上海</option>
+                    <option value="guangzhou">广州</option>
+                </select>
+            </label>
+        </div>
 
-        <label for="city">
-            <select name="city" id="city">
-                <option value="beijing">北京</option>
-                <option value="shanghai">上海</option>
-                <option value="guangzhou">广州</option>
-            </select>
-        </label>
+        <div>
+            <label class="alignment">爱好</label>
+            <label> <input type="checkbox" name="hobby" value="sport"> 运动 </label>
+            <label> <input type="checkbox" name="hobby" value="art"> 艺术 </label>
+            <label> <input type="checkbox" name="hobby" value="science"> 科学 </label>
+        </div>
 
-        <label>爱好：</label>
-        <label> <input type="checkbox" name="hobby" value="sport"> 运动 </label>
-        <label> <input type="checkbox" name="hobby" value="art"> 艺术 </label>
-        <label> <input type="checkbox" name="hobby" value="science"> 科学 </label>
+        <div>
+            <label class="alignment description" for="description">个人描述</label>
+            <textarea name="description" id="description" cols="22" rows="2"
+                      placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+        </div>
 
-        <label for="description">个人描述: </label>
-        <textarea name="description" id="description" cols="22" rows="2" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
-        <input type="submit" value="确认提交"/>
+        <div>
+            <input type="submit" value="确认提交"/>
+        </div>
+
     </form>
 </div>
 <br>
