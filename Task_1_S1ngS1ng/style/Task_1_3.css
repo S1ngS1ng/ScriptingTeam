@@ -1,0 +1,60 @@
+div.container {
+    /*Set container layout*/
+    /*Set overflow for automatic scroll bar*/
+    margin: 0;
+    padding: auto 10px;
+    height: 600px;
+    background-color: #eee;
+    border: solid #999 1px;
+    overflow: auto;
+}
+div.container > div {
+    /*Set 3 divs to be inline*/
+    display: inline-block;
+}
+img {
+    /*Initialize all image size and padding*/
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+div.left {
+    margin: 20px 10px;
+    padding: 20px;
+    max-height: 600px;
+    width: 200px;
+    background-color: white;
+    border: solid #999 1px;
+    display: inline-block;
+    vertical-align: top;
+}
+img.logo {
+    /*Logo float left*/
+    float: left;
+}
+p.name {
+    /*Team name size and weight*/
+    font-weight: bold;
+    font-size: 1.2em;
+}
+div.mid {
+    margin: 20px 10px;
+    padding: 20px;
+    max-height: 600px;
+    min-width: 400px;
+    background-color: white;
+    border: solid #999 1px;
+    width: 73%;
+    vertical-align: top;
+}
+
+div.right {
+    margin: 20px 10px;
+    padding: 20px;
+    max-height: 600px;
+    width: 120px;
+    background-color: white;
+    border: solid #999 1px;
+    float: right;
+    vertical-align: top;
+}
