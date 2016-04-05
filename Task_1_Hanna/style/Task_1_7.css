@@ -212,6 +212,8 @@ p.no {
     margin-left: 30px;
 }
 
+
+
 .map_country span {
     border: 1px solid #D1A899;
     width: 210px;
@@ -220,16 +222,18 @@ p.no {
     padding-left: 10px;
     padding-top: 4px;
     background-color: #FFFFFF;
-    background-image: url(select.png);
+    background-image: url(../image/select.png);
     background-repeat: no-repeat;
     background-position: 180px;
 }
 
-.map_country > ui {
+.map_country > ul {
     display: inline;
+
 }
 
-.map_country > ui > li {
+
+.map_country > ul > li {
     list-style: none;
     height: 25px;
     padding-left: 25px;
@@ -251,7 +255,7 @@ p.no {
 .map_country li:hover {
     background-color: #BE4E48;
     color: #FFFFFF;
-    background-image: url("icon-8.png");
+    background-image: url("../image/icon-8.png");
     background-position: 1px;
     background-repeat: no-repeat;
     background-size: 20px 20px;
@@ -596,10 +600,18 @@ span.animation:hover {
 }
 .email{
     height:350px;padding-bottom:20px;width: 1280px;background-color: #323840;
-    text-align: center;color: #FFFFFF
-}.email h2{
+    text-align:center;color: #FFFFFF
+}
+.email h2{
      padding-top: 90px;
-}.email div{
+}
+/*.banner p:not(.no) {*/
+    /*height: 52px;*/
+    /*color: #767777;*/
+    /*border-right: 2px solid #cac6c5;*/
+/*}*/
+
+.email div:not(.li_pic){
       margin-left: 390px;
 }.email input{
        width: 420px; border: 0;
@@ -616,7 +628,11 @@ span.animation:hover {
         padding-left: 10px;
         letter-spacing: 10px;
         background-color: #6f7178; border: 0;
-}.email li{
+}
+.email ul{
+
+}
+.email li{
          display: inline-block;list-style: none;margin-left: 25px;
 }
 .foot{
