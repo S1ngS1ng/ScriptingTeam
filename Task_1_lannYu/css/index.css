@@ -1,0 +1,163 @@
+.pagecontent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding-top: 44px;
+    background: #f4f4f4;
+}
+.menu{
+    overflow: hidden;
+    background: #fff;
+}
+.menu a{
+    display: block;
+    float: left;
+    width: 20%;
+    line-height: 40px;
+    height: 40px;
+    color: #666;
+    text-align: center;
+}
+.menu a.on{
+    border-bottom: 3px solid #8fd2d8;
+}
+.banner{
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+    height: 180px;
+}
+.section{
+    background: #fff;
+    margin-bottom: 20px;
+}
+.tagLists{
+    overflow: hidden;
+}
+.tagLists .item{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.tagLists .item img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+}
+.columns-three{
+    overflow: hidden;
+    margin: 20px 10px;
+    padding: 10px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+}
+.columns-three .item{
+    float: left;
+    width: 33.33%;
+    border-right: 1px solid #ddd;
+    margin-left: -1px;
+    text-align: center;
+}
+.columns-three .item:last-child{
+    border: none;
+}
+.columns-three .item img{
+    display: block;
+    border:none;
+    height: 80px;
+    max-width: 96%;
+    margin: 0 auto;
+}
+.columns-three .item h3{
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.columns-three .item .title{
+    font-size: 1.4rem;
+}
+.section .modular-title{
+    margin: 0 10px 10px;
+    font-size: 2rem;
+    padding: 10px 0;
+    font-weight: 700;
+    border-bottom: 1px solid #ddd;
+}
+.section .modular-item{
+    margin: 0 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.section .modular-item img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.section .modular-item .fr{
+    margin-left: 120px;
+}
+.section .modular-item .fr a{
+    display: block;
+    width: 46%;
+    float: left;
+    line-height: 40px;
+    margin: 5px 0 5px 4%;
+    background: #f7f7f7;
+    color: #666;
+    text-align: center;
+}
+.article{
+    background: #fff;
+}
+.article .item{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.article .item img{
+    width: 120px;
+    height: 80px;
+    float: left;
+}
+.article .item .fr{
+    margin-left: 130px;
+}
+.article .item .fr .title{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+.article .item .Release-time{
+    color: #d1d1d1;
+}
+.article .item .Release-time span{
+    margin-left: 5px;
+}
+.article .item-figure .title{
+    color: #555;
+}
+.article .item-figure .figure{
+    margin: 10px 0;
+    overflow: hidden;
+}
+.article .item-figure .figure img{
+    width: 33.33%;
+    float: left;
+    padding-right: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.article .item-figure .Release-time{
+
+}
