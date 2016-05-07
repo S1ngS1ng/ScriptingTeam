@@ -4,7 +4,6 @@
 
 var aqiData = [];
 var obj = {};
-var i;
 function $(id) {
     return document.getElementById(id);
 }
@@ -12,7 +11,7 @@ function $(id) {
 function addRow(table, data) {
     var tableRef = table.getElementsByTagName('tbody')[0];
     if (data.city) {
-        var row = tableRef.insertRow(i);
+        var row = tableRef.insertRow();
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
