@@ -14,8 +14,16 @@ function $(id) {
 function $query(selector) {
     return document.querySelectorAll(selector);
 }
+function getNodeIndex(element) {
+    var children = element.parentNode.childNodes;
+    for (var i = 0; i < children.length; i++) {
+        if(children[i] == element) {
+            return i;
+        }
+    }
+}
 
-var data = [1, 2, 3];
+var data = [];
 
 function renderData () {
     $('output').innerHTML = data.map(function (num) {
@@ -36,6 +44,9 @@ var calc = {
     popRight: function () {
         $('numInput').value = '';
         alert(data.pop());
+    },
+    deleteCurrent: function (cur) {
+        alert(cur);
     }
 };
 
@@ -64,13 +75,20 @@ function init () {
         calc.popRight();
         renderData();
     });
-            // for (var i = 0; i < $('top').length; i++) {
-            //     (function (index) {
-            //         $('top').chidNodes.onclick = function () {
-            //             alert(index);
-            //         };
-            //     })(i);
-            // }
+
+    $('output').addEventListener('click', function (ev) {
+        var bindEvent = ev || event;
+        if (bindEvent.target.nodeName.toUpperCase() == 'DIV') {
+            alert(bindEvent.target.innerHTML);
+            var deleteNum = parseInt(bindEvent.target.innerHTML);
+            for (var i = 0; i < data.length; i++) {
+                if (deleteNum == data[i]) {
+                    data.splice(i, 1);
+                }
+            }
+            this.removeChild(bindEvent.target);
+        }
+    });
 }
 
 init();
